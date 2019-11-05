@@ -29,13 +29,8 @@ class SignIn extends Component {
         password: ""
       });
     } catch (error) {
-      console.error(error);
+      console.log(error);
     }
-
-    this.setState({
-      email: "",
-      password: ""
-    });
   };
 
   handleChange = event => {
