@@ -3,12 +3,12 @@ import React from "react";
 import "./button.styles.scss";
 
 const Button = ({ children, isGoogleSignIn, ...otherProps }) => (
-  <div
+  <button
     className={`${isGoogleSignIn ? "google-sign-in" : ""} button`}
     {...otherProps}
   >
     {children}
-  </div>
+  </button>
 );
 
 export default Button;
