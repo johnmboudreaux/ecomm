@@ -41,13 +41,13 @@ class App extends Component {
       <div>
         <Header />
         <Switch>
-          <Route exact path="/" component={HomePage} />
-          <Route path="/shop" component={ShopPage} />
+          <Route exact path='/' component={HomePage} />
+          <Route path='/shop' component={ShopPage} />
           <Route
             exact
-            path="/signin"
+            path='/signin'
             render={() =>
-              this.props.currentUser ? <Redirect to="/" /> : <SignInAndSignUp />
+              this.props.currentUser ? <Redirect to='/' /> : <SignInAndSignUp />
             }
           />
         </Switch>
